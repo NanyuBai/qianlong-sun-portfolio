@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Qianlong Sun | Landscape Designer</title>
+    <meta
+      name="description"
+      content="Qianlong Sun, landscape designer portfolio across sustainable urbanism, site research, public space, drawing, and academic studios."
+    />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%23426e5a'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='24' font-family='Arial' font-weight='700' fill='white'%3EQS%3C/text%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="styles.css?v=20260823e" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Qianlong Sun home">
+        <span class="brand-mark">QS</span>
+        <span class="brand-text" data-i18n="brandName">孙千龙</span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="#experience" data-i18n="navExperience">经历</a>
+        <a href="#works" data-i18n="navWorks">作品</a>
+        <a href="#about" data-i18n="navAbout">关于</a>
+        <a href="#observation" data-i18n="navObservation">观察</a>
+        <a href="#downloads" data-i18n="navDownloads">下载</a>
+        <a href="#contact" data-i18n="navContact">联系</a>
+      </nav>
+      <div class="language-switch" aria-label="Language switch">
+        <button type="button" class="lang-button is-active" data-lang="zh">CN</button>
+        <button type="button" class="lang-button" data-lang="en">EN</button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section-band" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow" data-i18n="heroEyebrow">Landscape Designer / Melbourne</p>
+          <h1 id="hero-title" data-i18n="heroTitle">孙千龙</h1>
+          <p class="hero-subtitle" data-i18n="heroSubtitle">
+            关注城市公共空间、生态系统、场地叙事与可持续城市设计。
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#experience" data-i18n="heroPrimary">查看经历</a>
+            <a class="button secondary" href="#works" data-i18n="heroSecondary">查看作品</a>
+          </div>
+        </div>
+        <figure class="hero-visual">
+          <img src="assets/photos-web/5933e263884e2b91cd8dfd91981a80ee.jpg" alt="Travel landscape photograph beside a lake" />
+          <figcaption data-i18n="heroCaption">Travel landscape photograph, water edge and public realm atmosphere</figcaption>
+        </figure>
+      </section>
+
+      <section class="section-band muted experience-section" id="experience" aria-labelledby="experience-title">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow" data-i18n="experienceEyebrow">Experience</p>
+            <h2 id="experience-title" data-i18n="experienceTitle">教育、工作经历与专业能力</h2>
+          </div>
+          <a class="text-link" href="#downloads" data-i18n="experienceLink">查看简历文件</a>
+        </div>
+        <div class="cv-layout">
+          <aside class="cv-aside">
+            <p class="eyebrow" data-i18n="cvAsideEyebrow">Profile</p>
+            <h3 data-i18n="cvAsideTitle">景观设计师 / 城市公共空间与植物设计</h3>
+            <p data-i18n="cvSummary">
+              墨尔本大学景观建筑硕士在读，具备观赏园艺专业背景，拥有商业、居住社区、市政基础设施及文化旅游类景观项目经验。
+            </p>
+            <div class="cv-contact">
+              <a href="mailto:bainanyuu@gmail.com">bainanyuu@gmail.com</a>
+              <a href="tel:+8613717836950">+86 137 1783 6950</a>
+            </div>
+            <div class="hero-actions">
+              <a class="button primary" href="CV/Qianlong_Sun_Landscape_Designer_Resume_2026_Refined.docx" data-i18n="resumeButton">英文简历</a>
+              <a class="button secondary" href="CV/孙千龙_景观设计师_中文简历_2026_WPS兼容版.docx" data-i18n="chineseResumeButton">中文简历</a>
+            </div>
+          </aside>
+          <div class="cv-main">
+            <section class="cv-block cv-story" aria-labelledby="work-heading">
+              <div class="cv-block-heading">
+                <p class="eyebrow" data-i18n="workEyebrow">Professional Timeline</p>
+                <h3 id="work-heading" data-i18n="workTitle">工作经历</h3>
+              </div>
+              <div class="work-list" id="work-list"></div>
+            </section>
+            <section class="cv-block" aria-labelledby="education-heading">
+              <div class="cv-block-heading">
+                <p class="eyebrow" data-i18n="educationEyebrow">Education</p>
+                <h3 id="education-heading" data-i18n="educationTitle">教育背景</h3>
+              </div>
+              <div class="timeline education-timeline" id="education-list"></div>
+            </section>
+            <section class="cv-block compact-block" aria-labelledby="skills-heading">
+              <h3 id="skills-heading" data-i18n="skillsTitle">专业技能</h3>
+              <div class="skills-groups" id="skills-groups"></div>
+            </section>
+            <section class="cv-block compact-block" aria-labelledby="coursework-heading">
+              <h3 id="coursework-heading" data-i18n="courseworkTitle">代表课程</h3>
+              <div class="skill-tags" id="course-tags"></div>
+            </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band works-section" id="works" aria-labelledby="works-title">
+        <div class="section-heading split">
+          <div>
+            <p class="eyebrow" data-i18n="worksEyebrow">Selected Work</p>
+            <h2 id="works-title" data-i18n="worksTitle">作品与项目经历</h2>
+          </div>
+          <div class="works-controls">
+            <div class="view-switch" aria-label="Project view mode">
+              <button type="button" class="view-button" data-view="grid" data-i18n="gridView">图像</button>
+              <button type="button" class="view-button is-active" data-view="index" data-i18n="indexView">索引</button>
+            </div>
+            <div class="filter-bar" id="filter-bar" aria-label="Project filters"></div>
+          </div>
+        </div>
+        <div class="project-grid" id="project-grid"></div>
+      </section>
+
+      <section class="section-band" id="about" aria-labelledby="about-title">
+        <div class="about-layout">
+          <div class="section-heading">
+            <p class="eyebrow" data-i18n="aboutEyebrow">About</p>
+            <h2 id="about-title" data-i18n="aboutTitle">设计关注</h2>
+          </div>
+          <div class="about-copy">
+            <p class="about-text" data-i18n="aboutText">
+              通过场地研究、公共空间策略、生态系统理解与图面表达，将学习阶段的 Studio 项目、手绘观察和作品集资料组织为可持续扩展的个人专业档案。
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-band muted" id="observation" aria-labelledby="drawing-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="drawingEyebrow">Drawing & Observation</p>
+          <h2 id="drawing-title" data-i18n="drawingTitle">手绘、观察与现场表达</h2>
+        </div>
+        <div class="drawing-layout">
+          <figure>
+            <img src="手绘/皇家植物园1.png" alt="Royal Botanic Gardens drawing 1" />
+            <figcaption data-i18n="drawingOne">皇家植物园观察手绘 01</figcaption>
+          </figure>
+          <figure>
+            <img src="手绘/皇家植物园2.png" alt="Royal Botanic Gardens drawing 2" />
+            <figcaption data-i18n="drawingTwo">皇家植物园观察手绘 02</figcaption>
+          </figure>
+          <article class="document-panel">
+            <p class="eyebrow" data-i18n="drawingDocEyebrow">Document</p>
+            <h3 data-i18n="drawingDocTitle">墨尔本大学建筑观察</h3>
+            <p data-i18n="drawingDocText">作为观察、尺度判断与空间记录能力的补充材料。</p>
+            <a class="button secondary" href="手绘/墨大建筑.pdf" target="_blank" rel="noreferrer" data-i18n="viewDocument">查看文件</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-band" id="downloads" aria-labelledby="downloads-title">
+        <div class="section-heading">
+          <p class="eyebrow" data-i18n="downloadsEyebrow">Documents</p>
+          <h2 id="downloads-title" data-i18n="downloadsTitle">简历、作品集与补充资料</h2>
+        </div>
+        <div class="download-grid" id="download-grid"></div>
+      </section>
+
+      <section class="contact section-band" id="contact" aria-labelledby="contact-title">
+        <div class="contact-card">
+          <div>
+            <p class="eyebrow" data-i18n="contactEyebrow">Contact</p>
+            <h2 id="contact-title" data-i18n="contactTitle">开放求职、项目合作与作品交流</h2>
+          </div>
+          <div class="contact-actions">
+            <a class="button primary" href="mailto:bainanyuu@gmail.com" data-i18n="emailButton">发送邮件</a>
+            <a class="button secondary" href="CV/Qianlong_Sun_Landscape_Designer_Resume_2026_Refined.docx" data-i18n="resumeButton">英文简历</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span data-i18n="footerName">孙千龙 / Qianlong Sun</span>
+      <a href="#top" data-i18n="backTop">返回顶部</a>
+    </footer>
+
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+      <div class="modal-backdrop" data-close-modal></div>
+      <article class="modal-panel" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <button type="button" class="modal-close" data-close-modal aria-label="Close project detail">×</button>
+        <div id="modal-content"></div>
+      </article>
+    </div>
+
+    <script src="data.js?v=20260823e"></script>
+    <script src="app.js?v=20260823e"></script>
+  </body>
+</html>
