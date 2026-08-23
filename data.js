@@ -291,10 +291,23 @@ window.portfolioData = {
         question: "如何让历史作品成为个人能力发展路径的一部分，而不是分散文件？",
         strategy: "将早期作品统一归档，作为当前主页的补充材料。",
         outcome: "帮助访客理解从早期表达训练到当前 Studio 项目的连续成长。",
-        cover: "assets/thumbs-web/portfolio2022.jpg",
+        cover: "assets/thumbs-web/portfolio2022-page-01.jpg",
         tags: ["archive"],
         keywords: ["Archive", "Portfolio", "Early Work"],
-        files: [{ label: "Portfolio PDF", path: "作品集2022/作品集.pdf" }]
+        files: [
+          { label: "第 1 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-01.jpg" },
+          { label: "第 2 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-02.jpg" },
+          { label: "第 3 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-03.jpg" },
+          { label: "第 4 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-04.jpg" },
+          { label: "第 5 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-05.jpg" },
+          { label: "第 6 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-06.jpg" },
+          { label: "第 7 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-07.jpg" },
+          { label: "第 8 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-08.jpg" },
+          { label: "第 9 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-09.jpg" },
+          { label: "第 10 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-10.jpg" },
+          { label: "第 11 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-11.jpg" },
+          { label: "第 12 页", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-12.jpg" }
+        ]
       }
     ],
     downloads: [
@@ -615,10 +628,23 @@ window.portfolioData = {
         question: "How can historical work support a coherent professional archive instead of remaining a separate file?",
         strategy: "The archive is integrated as supporting material for understanding earlier design and representation work.",
         outcome: "It helps visitors read the progression from early visual training to current studio work.",
-        cover: "assets/thumbs-web/portfolio2022.jpg",
+        cover: "assets/thumbs-web/portfolio2022-page-01.jpg",
         tags: ["archive"],
         keywords: ["Archive", "Portfolio", "Early Work"],
-        files: [{ label: "Portfolio PDF", path: "作品集2022/作品集.pdf" }]
+        files: [
+          { label: "Page 1", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-01.jpg" },
+          { label: "Page 2", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-02.jpg" },
+          { label: "Page 3", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-03.jpg" },
+          { label: "Page 4", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-04.jpg" },
+          { label: "Page 5", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-05.jpg" },
+          { label: "Page 6", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-06.jpg" },
+          { label: "Page 7", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-07.jpg" },
+          { label: "Page 8", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-08.jpg" },
+          { label: "Page 9", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-09.jpg" },
+          { label: "Page 10", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-10.jpg" },
+          { label: "Page 11", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-11.jpg" },
+          { label: "Page 12", path: "作品集2022/作品集.pdf", thumbnail: "assets/thumbs-web/portfolio2022-page-12.jpg" }
+        ]
       }
     ],
     downloads: [
