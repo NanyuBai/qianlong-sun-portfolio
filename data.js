@@ -1,3 +1,24 @@
+const coranderrkPoster = "assets/coranderrk/QianlongSun.pdf";
+
+function coranderrkViews(language) {
+  return [
+    { image: "board", zh: "完整展板", en: "Full presentation board" },
+    { image: "country", zh: "水系、短鳍鳗与场地历史", en: "Water, eels and site history" },
+    { image: "tree-hollow", zh: "为何选址 Tree Hollow", en: "Why Tree Hollow?" },
+    { image: "core-plan", zh: "林地聚会空间总平面", en: "Woodland gathering plan" },
+    { image: "sections", zh: "集会、鳗鱼熏制与树洞生境剖面", en: "Sections through gathering spaces and habitat" },
+    { image: "woodland-views", zh: "林中花园与聚会场景", en: "Garden and gathering views" },
+    { image: "planting", zh: "七季种植、铺装与花期", en: "Seasonal planting, paving and flowering" },
+    { image: "seven-seasons", zh: "同一处集会空间的三个季节", en: "One gathering place in three seasons" },
+    { image: "ongoing-care", zh: "农场与长期养护", en: "The farm and ongoing care" }
+  ].map((view) => ({
+    label: view[language],
+    path: coranderrkPoster,
+    thumbnail: `assets/coranderrk/${view.image}-thumb.jpg`,
+    preview: `assets/coranderrk/${view.image}.jpg`
+  }));
+}
+
 window.portfolioData = {
   zh: {
     ui: {
@@ -65,7 +86,8 @@ window.portfolioData = {
       projectOutcome: "成果呈现",
       previousSlide: "上一页",
       nextSlide: "下一页",
-      openPdf: "打开 PDF"
+      openPdf: "打开 PDF",
+      openPreview: "查看大图"
     },
     filters: [
       { id: "all", label: "全部" },
@@ -153,6 +175,21 @@ window.portfolioData = {
       { src: "assets/photos-web/photo-11.jpg", thumb: "assets/photos-web/photo-11-thumb.jpg", label: "夜空与地景" }
     ],
     projects: [
+      {
+        title: "From Learning to Care｜从学习到照护",
+        year: "2026 年 11 月",
+        type: "景观建筑毕业设计",
+        role: "孙千龙 · 场地研究与景观设计",
+        summary: "Tree Hollow 位于 Coranderrk 游线中段。设计利用成龄树之间已有的空地布置聚会场所，保留树洞及周边原地表，供访客从步道观察。",
+        statement: "在 Coranderrk 的林间，一条环路串起鳗鱼熏制、七季集会、花园探索与树洞观察。",
+        question: "怎样让访客走近树洞、了解它为动物提供的庇护，同时保护老树的根区？",
+        strategy: "把聚会和鳗鱼熏制安排在已有的林间空地，让步道绕开树洞。访客可沿路从花期和铺装纹样辨认七季。方案中的文化解说由场地管理者和 Wurundjeri 知识持有者指导。",
+        outcome: "总平面与剖面展示人和树之间的距离。三个季相的同一视角呈现集会空间的变化，养护方案则探讨导览、种子销售和农场盈余如何支持后续照护。",
+        cover: "assets/coranderrk/cover.jpg",
+        tags: ["featured", "site", "public", "ecology"],
+        keywords: ["文化聚会空间", "林地生境", "季节性种植"],
+        files: coranderrkViews("zh")
+      },
       {
         title: "Landscape Studio 5: Sustainable Urbanism",
         year: "June 2026",
@@ -311,6 +348,7 @@ window.portfolioData = {
       }
     ],
     downloads: [
+      { title: "From Learning to Care｜毕业设计展板", type: "PDF", path: coranderrkPoster, text: "Coranderrk 完整展板，单页高清版，可放大查看总平面、剖面与种植图。" },
       { title: "Inter / Supporting Material", type: "PDF", path: "CV/Inter.pdf", text: "面试或补充资料文件。" },
       {
         title: "English Resume 2026",
@@ -402,7 +440,8 @@ window.portfolioData = {
       projectOutcome: "Outcome",
       previousSlide: "Previous",
       nextSlide: "Next",
-      openPdf: "Open PDF"
+      openPdf: "Open PDF",
+      openPreview: "View full-size image"
     },
     filters: [
       { id: "all", label: "All" },
@@ -490,6 +529,21 @@ window.portfolioData = {
       { src: "assets/photos-web/photo-11.jpg", thumb: "assets/photos-web/photo-11-thumb.jpg", label: "Night sky and landscape" }
     ],
     projects: [
+      {
+        title: "From Learning to Care",
+        year: "Nov 2026",
+        type: "Landscape Architecture Design Thesis",
+        role: "Qianlong Sun · Site research and landscape design",
+        summary: "Tree Hollow sits midway along the visitor route at Coranderrk. Existing clearings among mature trees make room for gathering, while visitors can observe the hollow from a path that leaves the ground around it undisturbed.",
+        statement: "A woodland loop at Coranderrk connects eel smoking, Seven Seasons gatherings, garden walks and hollow-tree habitat.",
+        question: "How close can visitors get to the hollow to learn about the animals it shelters while keeping the old tree’s root zone intact?",
+        strategy: "Gatherings and eel smoking take place in existing clearings. The path skirts the hollow, with flowering plants and paving patterns marking the seven seasons. Site managers and Wurundjeri Knowledge Holders would guide cultural interpretation.",
+        outcome: "A plan and sections show how the gathering spaces sit among the trees. Three views show one clearing across the seasons. The care proposal explores how guided visits, seed sales and farm surplus could support upkeep.",
+        cover: "assets/coranderrk/cover.jpg",
+        tags: ["featured", "site", "public", "ecology"],
+        keywords: ["Cultural gathering", "Woodland habitat", "Seasonal planting"],
+        files: coranderrkViews("en")
+      },
       {
         title: "Landscape Studio 5: Sustainable Urbanism",
         year: "June 2026",
@@ -648,6 +702,7 @@ window.portfolioData = {
       }
     ],
     downloads: [
+      { title: "From Learning to Care | Thesis board", type: "PDF", path: coranderrkPoster, text: "The complete Coranderrk presentation board. Zoom in to read the plans, sections and seasonal planting studies." },
       { title: "Inter / Supporting Material", type: "PDF", path: "CV/Inter.pdf", text: "Interview or supporting material file." },
       {
         title: "English Resume 2026",

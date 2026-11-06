@@ -168,6 +168,7 @@
       project.files.forEach((file, index) => {
         slides.push({
           image: file.thumbnail || project.cover,
+          preview: file.preview,
           label: file.label || `${index + 1}`,
           file: file.path
         });
@@ -199,7 +200,7 @@
       <div class="case-viewer">
         <div class="case-media" id="case-media">
           <button type="button" class="slide-nav prev" data-slide-step="-1" aria-label="${data.ui.previousSlide}">‹</button>
-          <img src="${slide.image}" alt="${slide.label}" />
+          <img src="${slide.preview || slide.image}" alt="${slide.label}" />
           <button type="button" class="slide-nav next" data-slide-step="1" aria-label="${data.ui.nextSlide}">›</button>
         </div>
         <div class="case-info">
@@ -228,6 +229,7 @@
             </div>
           </dl>
           ${slide.file ? `<a class="button primary" href="${slide.file}" target="_blank" rel="noreferrer">${data.ui.openPdf}</a>` : ""}
+          ${slide.preview ? `<a class="button secondary" href="${slide.preview}" target="_blank" rel="noreferrer">${data.ui.openPreview}</a>` : ""}
         </div>
       </div>
       <div class="slide-thumbs">
